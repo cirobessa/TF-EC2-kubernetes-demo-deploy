@@ -50,7 +50,7 @@ sudo apt-get install -y kubernetes-cni
 alias k=kubectl
 
 ### Deploy NETWORK Flannel
-sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+sudo /usr/local/bin/kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
 
 
