@@ -1,8 +1,8 @@
 provider "aws" {
   region = "us-east-1"
-  access_key              = var.AWS_ACCESS_KEY_ID
-  secret_key              = var.AWS_SECRET_ACCESS_KEY
   #  region = terraform.workspace == "default" ? "us-east-1" : "us-west-2"
+  access_key    = var.AWS_ACCESS_KEY_ID
+  secret_key    = var.AWS_SECRET_ACCESS_KEY
 }
 
 #data "aws_ssm_parameter" "ami_id" {
